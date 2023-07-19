@@ -210,6 +210,13 @@ table {
   font-display: swap;
   src: url(https://fonts.gstatic.com/s/karla/v30/qkBIXvYC6trAT55ZBi1ueQVIjQTDH52qFA.ttf) format('truetype');
 }
+@font-face {
+  font-family: 'Vollkorn';
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/vollkorn/v22/0ybuGDoxxrvAnPhYGxksckM2WMCpRjDj-DKhXWmZ.ttf) format('truetype');
+}
 body {
   width: 100vw;
   overflow-x: hidden;
@@ -227,7 +234,7 @@ body {
 .nav-info-container .nav-info {
   width: 100%;
   height: 100%;
-  max-width: 1400px;
+  max-width: 1200px;
   padding: 0px 16px;
   display: flex;
   justify-content: space-between;
@@ -258,6 +265,67 @@ body {
   font-size: 1.5em;
   cursor: pointer;
   margin-left: 15px;
+}
+nav {
+  width: 100vw;
+  height: 130px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid #dbdbdb;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+nav .navbar-container {
+  width: 1200px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav .navbar-container .navbar-p1 {
+  width: auto;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+nav .navbar-container .navbar-p1 .logo-nav {
+  width: auto;
+  height: 80%;
+}
+nav .navbar-container .navbar-p1 .logo-name {
+  margin-left: 16px;
+}
+nav .navbar-container .navbar-p1 .logo-name .h1-logo {
+  color: #248a41;
+  font-size: 2.5em;
+  font-family: 'Vollkorn', serif;
+  font-weight: 700;
+  font-style: italic;
+}
+nav .navbar-container .navbar-p1 .logo-name .h2-logo {
+  color: #747474;
+  font-size: 0.8em;
+  font-family: 'Jost', sans-serif;
+  font-weight: 500;
+}
+nav .navbar-container .navbar-p2 {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+nav .navbar-container .navbar-p2 .navbar-ul {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+nav .navbar-container .navbar-p2 .navbar-ul .nav-a {
+  text-decoration: none;
+  color: #555;
+  font-family: 'Jost', sans-serif;
+  font-weight: 700;
 }
 .whatsapp {
   width: 64px;
