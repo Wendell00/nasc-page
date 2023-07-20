@@ -248,14 +248,15 @@ main {
 }
 .swiper-button-next,
 .swiper-button-prev {
-  color: #248a41 !important;
+  color: #ffffff !important;
   position: absolute;
   top: 220px;
 }
 .swiper-pagination-bullet {
-  background-color: #248a41;
-  width: 15px;
-  height: 15px;
+  background-color: #00691e;
+  width: 19px;
+  height: 19px;
+  border: 2px solid white;
 }
 .swiper-pagination-bullet-active {
   background-color: #fff;
@@ -394,7 +395,7 @@ nav .navbar-container .navbar-p2 .a-call .btn-call p {
 .navbar.fixed {
   position: fixed;
   top: 0px;
-  z-index: 2;
+  z-index: 5;
 }
 .whatsapp {
   width: 64px;
