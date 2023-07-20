@@ -227,9 +227,6 @@ body {
 }
 main {
   position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   z-index: 3;
 }
 .swiper {
@@ -237,8 +234,6 @@ main {
   height: 500px;
   transition: 1s;
   position: relative;
-  display: flex;
-  justify-content: center;
   z-index: 3;
 }
 .swiper .swiper-wrapper {
