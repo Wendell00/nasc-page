@@ -225,11 +225,21 @@ body {
 .height-100vh {
   height: 100vh;
 }
+main {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+}
 .swiper {
-  width: 100%;
+  width: 1200px;
   height: 500px;
   transition: 1s;
   position: relative;
+  display: flex;
+  justify-content: center;
+  z-index: 3;
 }
 .swiper .swiper-wrapper {
   height: 100%;
@@ -245,7 +255,7 @@ body {
 .swiper-button-prev {
   color: #248a41 !important;
   position: absolute;
-  top: 430px;
+  top: 220px;
 }
 .swiper-pagination-bullet {
   background-color: #248a41;
