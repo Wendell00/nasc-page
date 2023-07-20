@@ -18,24 +18,39 @@ const swiper = new Swiper('.swiper', {
   
   });
 
-aside = document.querySelector('.aside-nav')
-menuIcon = document.querySelector('.menuIcon')
-closeIcon = document.querySelector('.closeIcon')
+// aside = document.querySelector('.aside-nav')
+// menuIcon = document.querySelector('.menuIcon')
+// closeIcon = document.querySelector('.closeIcon')
 
-menuIcon.addEventListener('click', () => {
-    aside.classList.toggle('dis-inline');
+// menuIcon.addEventListener('click', () => {
+//     aside.classList.toggle('dis-inline');
+// });
+
+// closeIcon.addEventListener('click', () => {
+//     aside.classList.toggle('dis-inline');
+// });
+
+window.addEventListener('scroll', function(){
+  const navbar = document.querySelector('.navbar');
+  const navinfo = document.querySelector('.nav-info-container')
+  console.log(navbar)
+  const scrollPosition = window.scrollY;
+
+  if (scrollPosition >= 40) {
+      navbar.classList.add('fixed');
+      navinfo.classList.add('scroll-fixed')
+  } else {
+      navbar.classList.remove('fixed');
+      navinfo.classList.remove('scroll-fixed')
+  }
 });
 
-closeIcon.addEventListener('click', () => {
-    aside.classList.toggle('dis-inline');
-});
 
+// var dataAtual = new Date();
 
-var dataAtual = new Date();
+// // Obtém o ano atual
+// var anoAtual = dataAtual.getFullYear();
 
-// Obtém o ano atual
-var anoAtual = dataAtual.getFullYear();
-
-var elementDate = document.querySelector('.year-date');
-elementDate.innerText = anoAtual;
+// var elementDate = document.querySelector('.year-date');
+// elementDate.innerText = anoAtual;
 
