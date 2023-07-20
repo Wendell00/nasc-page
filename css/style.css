@@ -453,3 +453,73 @@ nav .navbar-container .navbar-p2 .a-call .btn-call p {
   opacity: 1;
   transform: translate3d(0, 0, 0);
 }
+.parallax {
+  position: relative;
+  width: 100%;
+  height: 700px;
+  background: url("../public/construc.jpg") no-repeat center fixed;
+}
+.parallax .color {
+  width: 100vw;
+  height: 100%;
+  background-color: #53db53bd;
+}
+.parallax .color .form {
+  position: absolute;
+  height: auto;
+  width: 100%;
+  max-width: 1200px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  gap: 20px;
+  justify-content: space-around;
+  padding: 10px;
+}
+.parallax .color .form .form-textos,
+.parallax .color .form .form-email {
+  height: 590px;
+  width: 580px;
+  padding: 20px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.parallax .color .form .form-email {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  background-color: rgba(253, 253, 253, 0.658);
+}
+.parallax .color .form .form-email .form-title {
+  font-family: 'Jost', sans-serif;
+  color: #333333;
+  font-size: 1.25rem;
+}
+.parallax .color .form .form-email .input {
+  padding: 5px;
+  border: 1px solid;
+  border-radius: 2px;
+  height: 40px;
+}
+.parallax .color .form .form-email .text-area {
+  padding: 5px;
+  border: 1px solid;
+  border-radius: 2px;
+  font-family: 'Jost', sans-serif;
+  resize: none;
+}
+.parallax .color .form .form-email .botao {
+  height: 80px;
+  font-family: 'Jost', sans-serif;
+  font-size: 1.2rem;
+  background-color: #26d326e0;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  text-shadow: 1px 1px 3px black;
+}
+.parallax .color .form .form-email .botao:hover {
+  background-color: #4dec4de0;
+  cursor: pointer;
+}
