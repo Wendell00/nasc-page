@@ -231,7 +231,7 @@ main {
 }
 .swiper {
   width: 1200px;
-  height: 500px;
+  height: 540px;
   transition: 1s;
   position: relative;
   z-index: 3;
@@ -264,12 +264,12 @@ main {
 .nav-info-container {
   width: 100vw;
   height: 40px;
-  background-color: #248a41;
+  background-color: #1b676b;
   display: flex;
   justify-content: center;
 }
 .nav-info-container.scroll-fixed {
-  margin-bottom: 130px;
+  margin-bottom: 110px;
 }
 .nav-info-container .nav-info {
   width: 100%;
@@ -308,7 +308,7 @@ main {
 }
 nav {
   width: 100vw;
-  height: 130px;
+  height: 110px;
   background-color: white;
   display: flex;
   justify-content: center;
@@ -330,13 +330,13 @@ nav .navbar-container .navbar-p1 {
 }
 nav .navbar-container .navbar-p1 .logo-nav {
   width: auto;
-  height: 80%;
+  height: 90%;
 }
 nav .navbar-container .navbar-p1 .logo-name {
   margin-left: 16px;
 }
 nav .navbar-container .navbar-p1 .logo-name .h1-logo {
-  color: #248a41;
+  color: #88c425;
   font-size: 2.5em;
   font-family: 'Vollkorn', serif;
   font-weight: 700;
@@ -370,7 +370,7 @@ nav .navbar-container .navbar-p2 .navbar-ul .nav-a {
 nav .navbar-container .navbar-p2 .a-call {
   width: 260px;
   height: 60px;
-  background-color: #248a41;
+  background-color: #88c425;
   padding: 4px;
   box-sizing: border-box;
   text-decoration: none;
@@ -479,7 +479,7 @@ nav .navbar-container .navbar-p2 .a-call .btn-call p {
 .parallax .color {
   width: 100vw;
   height: auto;
-  background-color: #53db53bd;
+  background-color: #1b676bbd;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -539,7 +539,7 @@ nav .navbar-container .navbar-p2 .a-call .btn-call p {
   height: 50px;
   font-family: 'Jost', sans-serif;
   font-size: 1.2rem;
-  background-color: #248a41;
+  background-color: #1b676b;
   border: none;
   border-radius: 5px;
   color: white;
@@ -589,7 +589,7 @@ nav .navbar-container .navbar-p2 .a-call .btn-call p {
   padding-left: 10px;
   height: 45px;
   margin-bottom: 4px;
-  background-color: #248a41;
+  background-color: #1b676b;
 }
 .treinamentos .treinos ul li p {
   margin-left: 10px;
