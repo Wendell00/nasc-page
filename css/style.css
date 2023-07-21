@@ -471,72 +471,131 @@ nav .navbar-container .navbar-p2 .a-call .btn-call p {
 .parallax {
   position: relative;
   width: 100%;
-  height: 700px;
+  height: auto;
   background: url("../public/construc.jpg") no-repeat center fixed;
   z-index: 1;
   transition: 0.6s;
 }
 .parallax .color {
   width: 100vw;
-  height: 100%;
+  height: auto;
   background-color: #53db53bd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .parallax .color .form {
-  position: absolute;
   height: auto;
   width: 100%;
   max-width: 1200px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   display: flex;
   gap: 20px;
-  justify-content: space-around;
-  padding: 10px;
+  justify-content: space-between;
+  padding: 30px 0px;
 }
 .parallax .color .form .form-textos,
 .parallax .color .form .form-email {
-  height: 590px;
+  height: auto;
   width: 580px;
-  padding: 20px;
-  margin-bottom: 20px;
+  padding: 0px 20px;
+  margin-bottom: 5px;
   margin-top: 20px;
 }
 .parallax .color .form .form-email {
   display: flex;
-  gap: 20px;
+  height: auto;
   flex-direction: column;
   background-color: rgba(253, 253, 253, 0.658);
+  padding-bottom: 15px;
 }
 .parallax .color .form .form-email .form-title {
+  margin-top: 20px;
+  margin-bottom: 8px;
   font-family: 'Jost', sans-serif;
   color: #333333;
   font-size: 1.25rem;
 }
 .parallax .color .form .form-email .input {
   padding: 5px;
-  border: 1px solid;
+  border: none;
   border-radius: 2px;
-  height: 40px;
+  height: 30px;
+}
+.parallax .color .form .form-email .input:focus {
+  outline: none;
 }
 .parallax .color .form .form-email .text-area {
   padding: 5px;
-  border: 1px solid;
+  border: none;
   border-radius: 2px;
   font-family: 'Jost', sans-serif;
-  resize: none;
+  resize: vertical;
+  min-height: 60px;
+}
+.parallax .color .form .form-email .text-area:focus {
+  outline: none;
 }
 .parallax .color .form .form-email .botao {
-  height: 80px;
+  height: 50px;
   font-family: 'Jost', sans-serif;
   font-size: 1.2rem;
   background-color: #248a41;
   border: none;
   border-radius: 5px;
   color: white;
-  text-shadow: 1px 1px 3px black;
+  margin-top: 10px;
 }
 .parallax .color .form .form-email .botao:hover {
-  background-color: #4dec4de0;
+  background-color: #3dad5d;
   cursor: pointer;
+}
+.parallax .color .form .form-textos {
+  padding: 10px;
+  font-family: 'Jost', sans-serif;
+}
+.parallax .color .form .form-textos .form-contato {
+  font-size: 3rem;
+  color: #fff;
+}
+.parallax .color .form .form-textos .form-divtexto {
+  color: #fff;
+  margin-top: 50px;
+  font-size: 1.15rem;
+}
+.parallax .color .form .form-textos .btn-form-texto {
+  margin-top: 40px;
+  background-color: #165a29;
+  border: none;
+  color: #fff;
+  height: 50px;
+  border-radius: 2px;
+}
+.parallax .color .form .form-textos .btn-form-texto:hover {
+  background-color: #239242;
+}
+.treinamentos {
+  display: flex;
+  width: 100vw;
+  margin-top: 20px;
+  justify-content: center;
+}
+.treinamentos .treinos {
+  width: 1200px;
+}
+.treinamentos .treinos ul li {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding-left: 10px;
+  height: 45px;
+  margin-bottom: 4px;
+  background-color: #248a41;
+}
+.treinamentos .treinos ul li p {
+  margin-left: 10px;
+  color: #fff;
+  font-family: 'Jost', sans-serif;
+}
+.treinamentos .treinos ul li img {
+  height: 10px;
 }

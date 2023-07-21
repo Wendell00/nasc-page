@@ -1,44 +1,46 @@
 .parallax {
     position: relative;
     width: 100%;
-    height: 700px;
+    height: auto;
     background: url("../public/construc.jpg") no-repeat center fixed;
     z-index: 1;
     transition: 0.6s;
     
     .color {
         width: 100vw;
-        height: 100%;
+        height: auto;
         background-color: #53db53bd;
+        display: flex;
+        align-items: center;
+        justify-content: center;
 
         .form {
-            position: absolute;
             height: auto;
             width: 100%;
             max-width: 1200px;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
             display: flex;
             gap: 20px;
-            justify-content: space-around;
-            padding: 10px;
+            justify-content: space-between;
+            padding: 30px 0px;
 
             .form-textos, .form-email {
-                height: 590px;
+                height: auto;
                 width: 580px;
-                padding: 20px;
-                margin-bottom: 20px;
+                padding: 0px 20px;
+                margin-bottom: 5px;
                 margin-top: 20px;
             }
 
             .form-email {
                 display: flex;
-                gap: 20px;
+                height: auto;
                 flex-direction: column;
                 background-color: rgba(253, 253, 253, 0.658);
+                padding-bottom: 15px;
 
                 .form-title {
+                    margin-top: 20px;
+                    margin-bottom: 8px;
                     font-family: 'Jost', sans-serif;
                     color: rgb(51, 51, 51);
                     font-size: 1.25rem;
@@ -46,35 +48,75 @@
 
                 .input {
                     padding: 5px;
-                    border: 1px solid;
+                    border: none;
                     border-radius: 2px;
-                    height: 40px;
+                    height: 30px;
+
+                    &:focus {
+                        outline: none;
+                    }
                 }
 
                 .text-area {
                     padding: 5px;
-                    border: 1px solid;
+                    border: none;
                     border-radius: 2px;
                     font-family: 'Jost', sans-serif;
-                    resize: none;
+                    resize: vertical;
+                    min-height: 60px;
+
+                    &:focus {
+                        outline: none;
+                    }
                 }
 
                 .botao {
-                    height: 80px;
+                    height: 50px;
                     font-family: 'Jost', sans-serif;
                     font-size: 1.2rem;
                     background-color: #248a41;
                     border: none;
                     border-radius: 5px;
                     color: white;
-                    text-shadow: 1px 1px 3px black;
+                    margin-top: 10px;
+                    
 
                     &:hover {
-                        background-color: #4dec4de0;
+                        background-color: #3dad5d;
                         cursor: pointer;
                     }
                 }
-            } 
+            }
+            
+            .form-textos {
+                
+                padding: 10px;
+                font-family: 'Jost', sans-serif;
+
+                .form-contato {
+                    font-size: 3rem;
+                    color: #fff;
+                }
+
+                .form-divtexto {
+                    color: #fff;
+                    margin-top: 50px;
+                    font-size: 1.15rem;
+                }
+
+                .btn-form-texto {
+                    margin-top: 40px;
+                    background-color: #165a29;
+                    border: none;
+                    color: #fff;
+                    height: 50px;
+                    border-radius: 2px;
+
+                    &:hover {
+                        background-color: #239242;
+                    }
+                }
+            }
         }
     }
 
