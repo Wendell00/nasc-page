@@ -219,39 +219,9 @@ table {
 }
 main {
   position: relative;
-  z-index: 3;
-}
-.swiper {
-  width: 1200px;
-  height: 540px;
-  transition: 1s;
-  position: relative;
-  z-index: 3;
-}
-.swiper .swiper-wrapper {
-  height: 100%;
   width: 100%;
-}
-.swiper .swiper-wrapper .swiper-slide {
-  height: 100%;
-  width: 100%;
-  display: flex;
-  align-items: center;
-}
-.swiper-button-next,
-.swiper-button-prev {
-  color: #ffffff !important;
-  position: absolute;
-  top: 220px;
-}
-.swiper-pagination-bullet {
-  background-color: #00691e;
-  width: 19px;
-  height: 19px;
-  border: 2px solid white;
-}
-.swiper-pagination-bullet-active {
-  background-color: #fff;
+  height: 550px;
+  z-index: 3;
 }
 .nav-info-container {
   width: 100vw;
@@ -621,8 +591,7 @@ footer {
 .sobre .div-sobre {
   position: absolute;
   height: 520px;
-  width: 100%;
-  max-width: 1200px;
+  width: 1200px;
   background-color: #fff;
   display: flex;
   justify-content: space-between;
@@ -630,7 +599,7 @@ footer {
 }
 .sobre .div-sobre .texto-sobre {
   height: 100%;
-  width: 550px;
+  width: 50%;
   background-color: #fff;
 }
 .sobre .div-sobre .texto-sobre .texto-sobre-h2 {
@@ -638,8 +607,10 @@ footer {
   font-weight: 600;
   color: #1b676b;
   font-size: 2.5rem;
+  width: 90%;
 }
 .sobre .div-sobre .texto-sobre .texto-sobre-p {
+  width: 90%;
   margin-top: 30px;
   font-family: 'Signika', 'serif';
   font-size: 1.2rem;
@@ -647,15 +618,36 @@ footer {
   line-height: 25px;
   font-weight: 500;
 }
-.sobre .div-sobre .img-sobre {
+.sobre .swiper {
   height: 100%;
-  width: 590px;
+  width: 50%;
+  transition: 1s;
+  position: relative;
+  z-index: 3;
+  border-radius: 16px 0 0 16px;
 }
-.sobre .div-sobre .img-sobre img {
+.sobre .swiper .swiper-wrapper {
   height: 100%;
   width: 100%;
-  border-radius: 16px 0 0 16px;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.sobre .swiper .swiper-wrapper .swiper-slide {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.sobre .swiper .swiper-wrapper .swiper-slide img {
+  height: 100%;
+  width: 100%;
+}
+.sobre .swiper-pagination-bullet {
+  background-color: #00f2ff;
+  width: 19px;
+  height: 19px;
+  border: 2px solid white;
+}
+.sobre .swiper-pagination-bullet-active {
+  background-color: #88c425;
 }
 .treinamentos {
   display: flex;
