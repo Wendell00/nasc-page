@@ -45,6 +45,17 @@ window.addEventListener('scroll', function(){
   }
 });
 
+const servicos = document.querySelector('.li-servicos')
+const servicosBox = document.querySelector('.servicos-box')
+
+servicos.addEventListener("mouseenter", (event) => {
+  servicosBox.style.display = 'absolute'
+});
+
+servicos.addEventListener("mouseleave", (event) => {
+  servicosBox.style.display = 'absolute'
+});
+
 
 // var dataAtual = new Date();
 
