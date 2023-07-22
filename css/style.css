@@ -129,6 +129,13 @@ table {
 @font-face {
   font-family: 'Jost';
   font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/jost/v14/92zPtBhPNqw79Ij1E865zBUv7mz9JQVG.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Jost';
+  font-style: normal;
   font-weight: 500;
   font-display: swap;
   src: url(https://fonts.gstatic.com/s/jost/v14/92zPtBhPNqw79Ij1E865zBUv7myRJQVG.ttf) format('truetype');
@@ -568,6 +575,7 @@ footer {
   align-items: center;
   flex-direction: column;
   justify-content: center;
+  font-weight: 300;
 }
 .parallax .color .form .form-textos .form-contato {
   font-size: 3rem;
@@ -613,11 +621,11 @@ footer {
 .sobre .div-sobre .texto-sobre .texto-sobre-p {
   width: 90%;
   margin-top: 30px;
-  font-family: 'Signika', 'serif';
+  font-family: 'Jost', 'serif';
   font-size: 1.2rem;
   text-align: justify;
   line-height: 25px;
-  font-weight: 500;
+  font-weight: 300;
 }
 .sobre .swiper {
   height: 100%;
