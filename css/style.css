@@ -397,9 +397,6 @@ nav .navbar-container .navbar-p2 .navbar-ul .li-servicos li .servicos-box ul li:
 nav .navbar-container .navbar-p2 .navbar-ul .li-servicos:hover li .servicos-box {
   display: absolute;
 }
-nav .navbar-container .navbar-p2 .navbar-ul .li-servicos:hover {
-  background-color: #1b676b;
-}
 nav .navbar-container .navbar-p2 .a-call {
   width: 260px;
   height: 60px;
@@ -514,6 +511,7 @@ footer {
   background: url("../public/construc.jpg") no-repeat center fixed;
   z-index: 1;
   transition: 0.6s;
+  margin-bottom: 100px;
 }
 .parallax .color {
   width: 100vw;
@@ -549,27 +547,31 @@ footer {
 }
 .parallax .color .form .form-email .form-title {
   margin-top: 20px;
-  margin-bottom: 8px;
-  font-family: 'Jost', sans-serif;
+  margin-bottom: 4px;
+  font-family: 'Karla', sans-serif;
   color: #333333;
   font-size: 1.25rem;
+  font-weight: 300;
 }
 .parallax .color .form .form-email .input {
-  padding: 5px;
   border: none;
+  padding: 5px 10px;
   border-radius: 2px;
   height: 30px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
 }
 .parallax .color .form .form-email .input:focus {
   outline: none;
 }
 .parallax .color .form .form-email .text-area {
-  padding: 5px;
+  padding: 10px 10px;
   border: none;
   border-radius: 2px;
-  font-family: 'Jost', sans-serif;
   resize: vertical;
   min-height: 60px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
 }
 .parallax .color .form .form-email .text-area:focus {
   outline: none;
@@ -604,6 +606,8 @@ footer {
   color: #fff;
   margin-top: 50px;
   font-size: 1.15rem;
+  text-align: justify;
+  line-height: 25px;
 }
 .sobre {
   position: relative;
@@ -626,37 +630,51 @@ footer {
 }
 .sobre .div-sobre .texto-sobre {
   height: 100%;
-  width: 590px;
+  width: 550px;
   background-color: #fff;
 }
 .sobre .div-sobre .texto-sobre .texto-sobre-h2 {
-  font-family: 'Jost', 'serif';
+  font-family: 'Signika', 'serif';
+  font-weight: 600;
   color: #1b676b;
   font-size: 2.5rem;
 }
 .sobre .div-sobre .texto-sobre .texto-sobre-p {
   margin-top: 30px;
-  font-family: 'Jost', 'serif';
+  font-family: 'Signika', 'serif';
   font-size: 1.2rem;
+  text-align: justify;
+  line-height: 25px;
+  font-weight: 500;
 }
 .sobre .div-sobre .img-sobre {
   height: 100%;
   width: 590px;
-  background-color: #fff;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 .sobre .div-sobre .img-sobre img {
   height: 100%;
   width: 100%;
+  border-radius: 16px 0 0 16px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .treinamentos {
   display: flex;
   width: 100vw;
   margin-top: 20px;
   justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 .treinamentos .treinos {
   width: 1200px;
+}
+.treinamentos .treinos h2 {
+  font-family: 'Signika', 'serif';
+  color: #1b676b;
+  font-size: 2.5rem;
+  font-weight: 600;
+  align-self: flex-start;
+  margin-bottom: 50px;
 }
 .treinamentos .treinos ul li {
   display: flex;
