@@ -1,0 +1,95 @@
+.servicos {
+    position: relative;
+    height: 1000px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .title-servicos{
+        font-family: 'Signika', 'serif';
+        color: #1b676b;
+        font-size: 2.5rem;
+        font-weight: 600;
+        align-self: center;
+        margin-bottom: 50px;
+        width: 1200px;
+    }
+
+    .servico-container {
+        position: relative;
+        width: 100%;
+        max-width: 1200px;
+        height: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 20px;
+        justify-items: center;
+        
+
+        .servico-cards {
+            height: 400px;
+            width: 370px;
+            padding: 0px 10px;
+            border: 2px solid #e6e6e6;
+            cursor: pointer;
+            transition: 1s;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+
+            &:hover {
+                background-color: #30878b;
+                color: #fff;
+                transition: all ease-in-out 0.3s;
+                transform: translateZ(-1px);
+
+                .servico-img img {
+                    background-color: #fff;
+                    box-shadow: #1b676b -5px 5px, #1b676b -10px 10px;
+                    transition: all ease-in-out 0.3s;
+                    transform: translateZ(-1px); 
+                }
+
+                .servico-title h2{
+                    color: #fff;
+                }
+            }
+
+            .servico-img {
+                display: flex;
+                justify-content: center;
+                margin-top: 40px;
+            }
+            
+            .servico-img img {
+                height: 60px;
+                background-color: #30878b;
+                padding: 6px;
+                border-radius: 10px;
+            }
+
+            .servico-title {
+                margin-top: 20px;
+            }
+
+            .servico-title h2 {
+                text-align: center;
+                font-size: 1.6rem;
+                font-family: 'Signika', 'serif';
+                font-weight: 600;
+                color: #1b676b;
+            }
+
+            .servico-text {
+                margin-top: 40px;
+            }
+
+            .servico-text p {
+                text-align: center;
+                font-family: 'Karla', sans-serif;
+                font-weight: 400;
+            }
+        }
+    }
+}

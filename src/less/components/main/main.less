@@ -1,6 +1,91 @@
 main{
     position: relative;
-    width: 100%;
+    width: 100vw;
     height: 550px;
     z-index: 3;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #cfcfcf;
+    background-color: #fafafa;
+    overflow: hidden;
+
+    .demo-bg {
+        position: relative;
+        z-index: 1;
+        opacity: 0.05;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: auto;
+        margin-top: -200px;
+        filter: blur(2px);
+    }
+    
+    
+    .main-p1{
+        position: relative;
+        z-index: 2;
+        width: 600px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        opacity: 1;
+
+        h2{
+            font-size: 3.2rem;
+            text-align: start;
+            font-family: 'Karla', sans-serif;
+            font-weight: 700;
+            color: #88c425;
+            margin-bottom: 20px;
+        }
+
+        p{
+            color: black;
+            font-size: 1.1em;
+            font-family: 'Karla', sans-serif;
+            font-weight: 500;
+            margin-bottom: 10px;
+            text-align: justify;
+            width: 90%;
+        }
+
+        button{
+            background-color: #88c425;
+            color: white;
+            border-radius: 8px;
+            padding: 24px 16px;
+            font-family: 'Karla', sans-serif;
+            font-weight: 600;
+            font-size: 1em;
+            margin-top: 10px;
+            width: 140px;
+            border: none;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+
+            &:hover{
+                opacity: 0.8;
+            }
+        }
+    }
+
+    .main-p2{
+        position: relative;
+        z-index: 2;
+        width: 600px;
+        height: 100%;
+        clip-path: polygon(27% 0, 100% 0, 100% 100%, 0% 100%);
+        background-image: url('../public/bgMain.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
 }
