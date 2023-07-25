@@ -849,41 +849,72 @@ footer .copyright {
 .sobre {
   position: relative;
   width: 100vw;
-  height: 700px;
+  height: 830px;
   background-color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+@media screen and (min-width: 300px) {
+  .sobre {
+    height: 700px;
+  }
+}
 .sobre .div-sobre {
   position: absolute;
-  height: 520px;
-  width: 1200px;
+  height: auto;
+  width: 100vw;
   background-color: #fff;
   display: flex;
   justify-content: space-between;
   padding: 30px 0px;
 }
+@media screen and (min-width: 1200px) {
+  .sobre .div-sobre {
+    width: 1200px;
+  }
+}
 .sobre .div-sobre .texto-sobre {
   height: 100%;
-  width: 50%;
+  width: 100%;
   background-color: #fff;
+  padding-left: 40px;
+}
+@media screen and (min-width: 768px) {
+  .sobre .div-sobre .texto-sobre {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .sobre .div-sobre .texto-sobre {
+    padding: 0;
+  }
 }
 .sobre .div-sobre .texto-sobre .texto-sobre-h2 {
   font-family: 'Signika', 'serif';
   font-weight: 600;
   color: #1b676b;
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   width: 90%;
+}
+@media screen and (min-width: 900px) {
+  .sobre .div-sobre .texto-sobre .texto-sobre-h2 {
+    font-size: 2.5rem;
+  }
 }
 .sobre .div-sobre .texto-sobre .texto-sobre-p {
   width: 90%;
   margin-top: 30px;
   font-family: 'Jost', 'serif';
-  font-size: 1.2rem;
+  font-size: 1rem;
   text-align: justify;
   line-height: 25px;
   font-weight: 300;
+}
+@media screen and (min-width: 900px) {
+  .sobre .div-sobre .texto-sobre .texto-sobre-p {
+    font-size: 1.2rem;
+  }
 }
 .sobre .swiper {
   height: 100%;
@@ -893,10 +924,21 @@ footer .copyright {
   z-index: 3;
   border-radius: 16px 0 0 16px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .sobre .swiper {
+    display: block;
+  }
 }
 .sobre .swiper .swiper-wrapper {
   height: 100%;
-  width: 100%;
+  width: 90%;
+}
+@media screen and (min-width: 1200px) {
+  .sobre .swiper .swiper-wrapper {
+    width: 100%;
+  }
 }
 .sobre .swiper .swiper-wrapper .swiper-slide {
   height: 100%;
