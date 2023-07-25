@@ -45,15 +45,14 @@ const swiper = new Swiper('.swiper', {
 window.addEventListener('scroll', function(){
   const navbar = document.querySelector('.navbar');
   const navinfo = document.querySelector('.nav-info-container')
-  console.log(navbar)
   const scrollPosition = window.scrollY;
 
   if (scrollPosition >= 40) {
-      navbar.classList.add('fixed');
-      navinfo.classList.add('scroll-fixed')
+    navbar.classList.add('fixed');
+    navinfo.classList.add('scroll-fixed')
   } else {
-      navbar.classList.remove('fixed');
-      navinfo.classList.remove('scroll-fixed')
+    navbar.classList.remove('fixed');
+    navinfo.classList.remove('scroll-fixed')
   }
 });
 
