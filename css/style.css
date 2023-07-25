@@ -152,14 +152,14 @@ table {
   font-style: normal;
   font-weight: 500;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/signika/v20/vEFO2_JTCgwQ5ejvMV0O96D01E8J0tJlHJbG.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/signika/v25/vEF72_JTCgwQ5ejvMV0Ox_Kg1UwJ0tKfX4zNpD8E4ASzH1r9szuYzQ.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Signika';
   font-style: normal;
   font-weight: 600;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/signika/v20/vEFO2_JTCgwQ5ejvMV0O96D01E8J0tKJG5bG.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/signika/v25/vEF72_JTCgwQ5ejvMV0Ox_Kg1UwJ0tKfX4zNpD8E4ASzH1r9XzyYzQ.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Inter';
@@ -688,6 +688,18 @@ footer .copyright {
   justify-content: space-between;
   padding: 30px 0px;
 }
+@media screen and (max-width: 1200px) {
+  .parallax .color .form {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0px;
+    margin-bottom: 30px;
+  }
+  .parallax .color .form .form-textos {
+    width: 90%;
+    padding: 0px;
+  }
+}
 .parallax .color .form .form-textos,
 .parallax .color .form .form-email {
   height: auto;
@@ -758,9 +770,24 @@ footer .copyright {
   font-weight: 400;
   width: 50%;
 }
+@media screen and (max-width: 768px) {
+  .parallax .color .form .form-textos {
+    width: 90%;
+  }
+}
 .parallax .color .form .form-textos .form-contato {
   font-size: 3rem;
   color: #fff;
+}
+@media screen and (max-width: 1199.98px) {
+  .parallax .color .form .form-textos .form-contato {
+    font-size: 2.6rem;
+  }
+}
+@media screen and (max-width: 281.86px) {
+  .parallax .color .form .form-textos .form-contato {
+    font-size: 2rem;
+  }
 }
 .parallax .color .form .form-textos .form-divtexto {
   color: #fff;
@@ -768,6 +795,11 @@ footer .copyright {
   font-size: 1.15rem;
   text-align: justify;
   line-height: 25px;
+}
+@media screen and (max-width: 281.86px) {
+  .parallax .color .form .form-textos .form-divtexto {
+    font-size: 1.2rem;
+  }
 }
 .sobre {
   position: relative;
@@ -850,6 +882,12 @@ footer .copyright {
   align-items: center;
   flex-direction: column;
 }
+@media screen and (max-width: 1199.98px) {
+  .servicos {
+    height: auto;
+    justify-items: center;
+  }
+}
 .servicos .title-servicos {
   font-family: 'Signika', 'serif';
   color: #1b676b;
@@ -858,6 +896,16 @@ footer .copyright {
   align-self: center;
   margin-bottom: 50px;
   width: 1200px;
+}
+@media screen and (max-width: 1200px) {
+  .servicos .title-servicos {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 282.7px) {
+  .servicos .title-servicos {
+    font-size: 2.22rem;
+  }
 }
 .servicos .servico-container {
   position: relative;
@@ -870,6 +918,22 @@ footer .copyright {
   gap: 20px;
   justify-items: center;
 }
+@media screen and (max-width: 1199.98px) {
+  .servicos .servico-container {
+    grid-template-columns: 1fr 1fr;
+    gap: 2px;
+  }
+}
+@media screen and (max-width: 791.3px) {
+  .servicos .servico-container {
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (max-width: 282.7px) {
+  .servicos .servico-container {
+    gap: 20px;
+  }
+}
 .servicos .servico-container .servico-cards {
   height: 400px;
   width: 370px;
@@ -878,6 +942,22 @@ footer .copyright {
   cursor: pointer;
   transition: 1s;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+@media screen and (max-width: 377.5px) {
+  .servicos .servico-container .servico-cards {
+    width: 345px;
+  }
+}
+@media screen and (max-width: 361.7px) {
+  .servicos .servico-container .servico-cards {
+    width: 330px;
+    gap: 5px;
+  }
+}
+@media screen and (max-width: 282.7px) {
+  .servicos .servico-container .servico-cards {
+    width: 255px;
+  }
 }
 .servicos .servico-container .servico-cards:hover {
   background-color: #30878b;
@@ -917,6 +997,12 @@ footer .copyright {
 }
 .servicos .servico-container .servico-cards .servico-text {
   margin-top: 40px;
+}
+@media screen and (max-width: 282.7px) {
+  .servicos .servico-container .servico-cards .servico-text {
+    font-size: 0.9rem;
+    margin-top: 20px;
+  }
 }
 .servicos .servico-container .servico-cards .servico-text p {
   text-align: center;

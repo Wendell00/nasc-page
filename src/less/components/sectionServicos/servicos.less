@@ -7,6 +7,11 @@
     align-items: center;
     flex-direction: column;
 
+    @media screen and (max-width: 1199.98px){
+        height: auto;
+        justify-items: center;
+    }
+
     .title-servicos{
         font-family: 'Signika', 'serif';
         color: #1b676b;
@@ -15,6 +20,15 @@
         align-self: center;
         margin-bottom: 50px;
         width: 1200px;
+
+        @media screen and (max-width: 1200px) {
+            text-align: center;
+        }
+
+        @media screen and (max-width: 282.7px) {
+            font-size: 2.22rem;
+        }
+
     }
 
     .servico-container {
@@ -27,7 +41,19 @@
         grid-template-rows: 1fr 1fr;
         gap: 20px;
         justify-items: center;
+
+        @media screen and (max-width: 1199.98px) {
+            grid-template-columns: 1fr 1fr;
+            gap: 2px;
+        }
+
+        @media screen and (max-width: 791.30px) {
+            grid-template-columns: 1fr;
+        }
         
+        @media screen and (max-width: 282.7px) {
+            gap: 20px;
+        }
 
         .servico-cards {
             height: 400px;
@@ -37,6 +63,19 @@
             cursor: pointer;
             transition: 1s;
             box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+
+            @media screen and (max-width: 377.5px){
+                width: 345px;
+            }
+
+            @media screen and (max-width: 361.7px) {
+                width: 330px;
+                gap: 5px;
+            }
+
+            @media screen and (max-width: 282.7px) {
+                width: 255px;
+            }
 
             &:hover {
                 background-color: #30878b;
@@ -83,6 +122,11 @@
 
             .servico-text {
                 margin-top: 40px;
+
+                @media screen and (max-width: 282.7px) {
+                    font-size: 0.9rem;
+                    margin-top: 20px;
+                }
             }
 
             .servico-text p {
