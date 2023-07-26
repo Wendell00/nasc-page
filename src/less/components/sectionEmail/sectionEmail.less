@@ -40,10 +40,18 @@
 
             .form-textos, .form-email {
                 height: auto;
-                width: 580px;
+                width: 80vw;
                 padding: 0px 20px;
                 margin-bottom: 5px;
                 margin-top: 20px;
+
+                @media screen and (min-width: 360px){
+                    width: 580px;
+                }
+
+                @media screen and (max-width: 501.80px) {
+                    width: 450px;
+                }
             }
 
             .form-email {
@@ -52,6 +60,8 @@
                 flex-direction: column;
                 background-color: rgba(253, 253, 253, 0.658);
                 padding-bottom: 15px;
+
+                
 
                 .form-title {
                     margin-top: 20px;
