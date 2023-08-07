@@ -30,17 +30,20 @@ const swiper = new Swiper('.swiper', {
   
   });
 
-// aside = document.querySelector('.aside-nav')
-// menuIcon = document.querySelector('.menuIcon')
-// closeIcon = document.querySelector('.closeIcon')
+aside = document.querySelector('.aside-nav')
+menuIcon = document.querySelector('.menu-icon')
+closeIcon = document.querySelector('.aside-x')
+body = document.querySelector('body')
 
-// menuIcon.addEventListener('click', () => {
-//     aside.classList.toggle('dis-inline');
-// });
+menuIcon.addEventListener('click', () => {
+    aside.classList.toggle('display-toggle');
+    body.classList.toggle('overflow-toggle')
+});
 
-// closeIcon.addEventListener('click', () => {
-//     aside.classList.toggle('dis-inline');
-// });
+closeIcon.addEventListener('click', () => {
+    aside.classList.toggle('display-toggle');
+    body.classList.toggle('overflow-toggle')
+});
 
 window.addEventListener('scroll', function(){
   const navbar = document.querySelector('.navbar');
@@ -58,13 +61,32 @@ window.addEventListener('scroll', function(){
 
 const servicos = document.querySelector('.li-servicos')
 const servicosBox = document.querySelector('.servicos-box')
+const servicosAside = document.querySelector('.aside-li-servicos')
+const servicosBoxAside = servicosAside.querySelector('.aside-servicos-box')
+const imgSeta = document.querySelector("imgSeta")
 
 servicos.addEventListener("mouseenter", (event) => {
-  servicosBox.style.display = 'absolute'
+  servicosBox.classList.toggle('display-toggle')
 });
 
 servicos.addEventListener("mouseleave", (event) => {
-  servicosBox.style.display = 'absolute'
+  servicosBox.classList.toggle('display-toggle')
+});
+
+servicosAside.addEventListener("click", (event) => {
+  servicosBoxAside.classList.toggle('display-toggle')
+  imgSeta.classList.toggle('rotate-90')
+});
+
+const treinamentosList = document.querySelectorAll('.treinamentos-li');
+
+treinamentosList.forEach((element) => {
+  element.addEventListener('click', () => {
+    const container2 = element.querySelector('.container2-li');
+    const img = element.querySelector('img');
+    img.classList.toggle('rotate-90')
+    container2.classList.toggle('display-toggle');
+  });
 });
 
 

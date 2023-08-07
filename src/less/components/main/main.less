@@ -6,73 +6,110 @@ main{
     display: flex;
     justify-content: center;
     border-bottom: 1px solid #cfcfcf;
-    background-color: #fafafa;
+    background-color: #1b676b;
     overflow: hidden;
 
     .demo-bg {
-        position: relative;
-        z-index: 1;
-        opacity: 0.05;
         position: absolute;
+        background: url('../public/bgMain2.jpg') no-repeat center fixed;
+        background-size: cover;
+        z-index: 1;
+        opacity: 0.1;
         left: 0;
         top: 0;
         width: 100%;
-        height: auto;
+        height: 800px;
         margin-top: -200px;
-        filter: blur(2px);
+        filter: blur(1px);
+
     }
     
     
     .main-p1{
         position: relative;
         z-index: 2;
-        width: 600px;
+        width: 55vw;
         height: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: start;
+        padding-left: 5vw;
         opacity: 1;
+  
+        @media screen and (min-width: 1200px) {
+            width: 600px;
+            padding-left: 0;
+        }
 
         h2{
-            font-size: 3.2rem;
-            text-align: start;
+            font-size: 1.9rem;
+            text-align: center;
             font-family: 'Karla', sans-serif;
             font-weight: 700;
-            color: #88c425;
+            color: #ffffff;
             margin-bottom: 20px;
+
+            @media screen and (min-width: 342px) {
+                font-size: 2.1rem;
+                text-align: start;
+            }
+
+            @media screen and (min-width: 380px) {
+                font-size: 2.4rem;
+            }
+
+            @media screen and (min-width: 454px) {
+                font-size: 2.8rem;
+            }
+
+            @media screen and (min-width: 1200px) {
+                font-size: 3.2rem;
+            }
         }
 
         p{
-            color: black;
-            font-size: 1.1em;
+            color: rgb(255, 255, 255);
+            font-size: 0.9em;
             font-family: 'Karla', sans-serif;
             font-weight: 500;
             margin-bottom: 15px;
-            line-height: 23px;
+            line-height: 18px;
             text-align: justify;
             width: 90%;
+
+            @media screen and (min-width: 380px) {
+                line-height: 23px;
+            }
+
+            @media screen and (min-width: 454px) {
+                font-size: 1.1em;
+            }
         }
 
-        button{
-            background-color: #88c425;
-            color: white;
-            border-radius: 8px;
-            padding: 24px 16px;
-            font-family: 'Karla', sans-serif;
-            font-weight: 600;
-            font-size: 1em;
-            margin-top: 10px;
-            width: 140px;
-            border: none;
-            height: 40px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            cursor: pointer;
-
-            &:hover{
-                opacity: 0.8;
+        a{
+            text-decoration: none;
+            
+            button{
+                background-color: #88c425;
+                color: white;
+                border-radius: 8px;
+                padding: 24px 16px;
+                font-family: 'Karla', sans-serif;
+                font-weight: 600;
+                font-size: 1em;
+                margin-top: 10px;
+                width: 140px;
+                border: none;
+                height: 40px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+    
+                &:hover{
+                    opacity: 0.8;
+                }
             }
         }
     }
@@ -80,13 +117,22 @@ main{
     .main-p2{
         position: relative;
         z-index: 2;
-        width: 600px;
+        width: 40vw;
         height: 100%;
         clip-path: polygon(27% 0, 100% 0, 100% 100%, 0% 100%);
         background-image: url('../public/bgMain.jpg');
         background-size: cover;
         background-repeat: no-repeat;
-        background-position: center center;
+        background-position: 65%;
+
+        @media screen and (min-width: 800px) {
+            background-position: 80%;
+        }
+
+        @media screen and (min-width: 1200px) {
+            background-position: center center;
+            width: 600px;
+        }
     }
 
 }

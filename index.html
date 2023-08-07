@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
     <meta name="description" content="Nasc Segurança do Trabalho e Prevenção do Trabalho">
-    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="css/style.css">
@@ -18,6 +18,40 @@
             <img src="./public/whatsappGreen.png" alt="WhatsApp">
         </a>
     </div>
+    <aside class="aside-nav display-toggle">
+        <div class="aside-child">
+            <i class="fa-solid fa-xmark aside-x"></i>
+            <ul>
+               <a href="#home" class="aside-a"><li>HOME</li></a>
+                <li class="aside-a aside-li-servicos">
+                    SERVIÇOS 
+                    <img class="imgSeta" src="public/playGreen.png" alt="seta">
+                    <div class="aside-servicos-box display-toggle">
+                        <ul>
+                            <a href="#sobre"><li>Segurança do Trabalho</li></a>
+                            <a href="#treinamentos"><li>Treinamentos</li></a>
+                        </ul>
+                    </div>
+                    </li>
+                </li>
+                <a href="#sobre" class="aside-a"><li>SOBRE NÓS</li></a>
+                <a href="#contato" class="aside-a"><li>FALE CONOSCO</li></a>
+            </ul>
+            <a href="tel:+55-11-954445544" class="a-call" target="_blank">
+                <div class="btn-call">
+                    <i class="fas fa-phone"></i>
+                    <p>(11) 95444-5544</p>
+                </div>
+            </a>
+            <div class="aside-footer">
+                <div class="p1"><i class="fas fa-envelope"></i><p>contato@nascseguranca.com</p></div>
+                <div class="p2"> 
+                    <a href="https://www.instagram.com/nascseguranca/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://api.whatsapp.com/send?l=pt&phone=55011954445544&text=Bom dia, eu vim pelo site." target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+    </aside>
     <div class="nav-info-container">
         <div class="nav-info">
             <div class="info-p1">
@@ -27,8 +61,8 @@
                 <p class="text-nav-info">(11) 95444-5544</p>
             </div>
             <div class="info-p2">
-                <i class="fa-brands fa-instagram"></i>
-                <i class="fa-brands fa-whatsapp"></i>
+                <a href="https://www.instagram.com/nascseguranca/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://api.whatsapp.com/send?l=pt&phone=55011954445544&text=Bom dia, eu vim pelo site." target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
             </div>
         </div>
     </div>
@@ -36,28 +70,25 @@
         <div class="navbar-container">
             <div class="navbar-p1">
                 <img src="./public/logo.png" alt="Logo Nasc Segurança e Prevenção do Trabalho" class="logo-nav">
-                <div class="logo-name">
-                    <h1 class="h1-logo">NASC</h1>
-                    <h2 class="h2-logo">Segurança & Prevenção</h2>
-                </div>
             </div>
             <div class="navbar-p2">
                 <ul class="navbar-ul">
-                    <a href="" class="nav-a"><li>HOME</li></a>
-                    <a href="" class="nav-a li-servicos"><li>
+                    <a href="#home" class="nav-a"><li>HOME</li></a>
+                    <li class="nav-a li-servicos">
                         SERVIÇOS 
                         <img src="public/setaNav.png" alt="seta">
-                        <div class="servicos-box">
+                        <div class="servicos-box display-toggle">
                             <ul>
-                                <li>Segurança do Trabalho</li>
-                                <li>Treinamentos</li>
+                                <a href="#sobre"><li>Segurança do Trabalho</li></a>
+                                <a href="#treinamentos"><li>Treinamentos</li></a>
                             </ul>
                         </div>
-                    </li></a>
-                    <a href="" class="nav-a"><li>SOBRE NÓS</li></a>
-                    <a href="" class="nav-a"><li>FALE CONOSCO</li></a>
+                    </li>
+                    <a href="#sobre" class="nav-a"><li>SOBRE NÓS</li></a>
+                    <a href="#contato" class="nav-a"><li>FALE CONOSCO</li></a>
                 </ul>
-                <a href="" class="a-call">
+                <i class="fa-solid fa-bars menu-icon"></i>
+                <a href="tel:+55-11-954445544" class="a-call" target="_blank">
                     <div class="btn-call">
                         <i class="fas fa-phone"></i>
                         <p>(11) 95444-5544</p>
@@ -66,29 +97,29 @@
             </div>
         </div>
     </nav>
-    <main>
-        <img
+    <main id="home">
+        <div
         class="demo-bg"
-        src="./public/bgMain2.jpg"
+        src=""
         alt=""
-      >
-        <div class="main-p1">
+      ></div>
+        <div class="main-p1" data-anime="top">
             <h2>Segurança do Trabalho</h2>
             <p>A NASC oferece o melhor em Prevenção e Segurança do trabalho.</p>
             <p>Quer saber mais sobre esse tipo de serviço e seus benefícios para empresas de todos os portes? </p>
             <p>Conheça, agora, um pouco mais sobre como a assessoria trabalhista se torna cada vez mais indispensável para a sua empresa!</p>
-            <button>Conhecer!</button>
+            <a href="#sobre"><button>Conhecer!</button></a>
         </div>
-        <div class="main-p2"></div>
+        <div class="main-p2" data-anime="right"></div>
     </main>
-    <section class="sobre">
+    <section class="sobre" id="sobre">
         <div class="div-sobre">
-            <div class="texto-sobre">
+            <div class="texto-sobre" data-anime="left">
                 <h2 class="texto-sobre-h2">Por que investir em Segurança do Trabalho?</h2>
                 <p class="texto-sobre-p">Ao investir em medidas de segurança do trabalho, não apenas protegemos nossos valiosos funcionários, mas também fortalecemos o próprio negócio. O cumprimento das normas estabelecidas pelo Ministério do Trabalho não é apenas uma obrigatoriedade, mas uma oportunidade de criar um ambiente mais seguro, reduzir acidentes e, consequentemente, aumentar a eficiência operacional.</p>
                 <p class="texto-sobre-p">Nossa empresa compreende a importância dessa missão e está empenhada em promover constantes melhorias na segurança. Afinal, somente através de um ambiente saudável e protegido podemos alcançar o sucesso coletivo e prosperar em nossos objetivos.</p>
             </div>
-            <div class="swiper">
+            <div class="swiper" data-anime="right">
                 <div class="swiper-wrapper">
                     <!-- Slides -->
                     <div class="swiper-slide slide-1">
@@ -106,10 +137,10 @@
             </div>
         </div>
     </section>
-    <section class="parallax">
+    <section class="parallax" id="contato">
         <div class="color">
             <div class="form">
-                <div class="form-textos">
+                <div class="form-textos" data-anime="left">
                     <p class="form-contato">Entre em contato</p>
                     <div class="form-divtexto">
                         Estamos comprometidos com sua segurança! Conte conosco para esclarecer dúvidas, receber sugestões e tratar qualquer questão relacionada ao ambiente de trabalho. Preencha o formulário e entraremos em contato prontamente. Sua segurança é nossa prioridade!
@@ -132,9 +163,9 @@
             </div>
         </div>
     </section>
-    <section class="servicos">
+    <section class="servicos" id="servicos">
         <h2 class="title-servicos">Conheça a NASC</h2>
-        <div class="servico-container">
+        <div class="servico-container" data-anime="left">
             <div class="servico-cards">
                 <div class="servico-img">
                     <img src="public/capacete.png" alt="capacete de obra">
@@ -209,27 +240,84 @@
             </div>
         </div>
     </section>
-    <section class="treinamentos">
+    <section class="treinamentos" id="treinamentos">
         <div class="treinos">
             <h2>Treinamentos</h2>
-            <ul>
-                <li><img src="public/play.png" alt="seta"><p class="line-treino">Auditoria de NR's</p></li>
-                <li><img src="public/play.png" alt="seta"><p class="line-treino">Avaliação Ergonômica</p></li>
-                <li><img src="public/play.png" alt="seta"><p class="line-treino">Elaboração de Processo Eleitoral de CIPA</p></li>
-                <li><img src="public/play.png" alt="seta"><p class="line-treino">Laudo das Instalações Elétricas</p></li>
-                <li><img src="public/play.png" alt="seta"><p class="line-treino">Laudo de Insalubridade</p></li>
-                <li><img src="public/play.png" alt="seta"><p class="line-treino">Laudo de Periculosidade</p></li>
-                <li><img src="public/play.png" alt="seta"><p class="line-treino">Laudo de Ponte Rolante</p></li>
-                <li><img src="public/play.png" alt="seta"><p class="line-treino">Laudo de Vasos de Pressão, Caldeiras e Compressores</p></li>
-                <li><img src="public/play.png" alt="seta"><p class="line-treino">LTCAT</p></li>
-                <li><img src="public/play.png" alt="seta"><p class="line-treino">Laudo de NR-12 Máquinas e Equipamentos</p></li>
-                <li><img src="public/play.png" alt="seta"><p class="line-treino">Ordem de Serviço NR-01</p></li>
-                <li><img src="public/play.png" alt="seta"><p class="line-treino">PCMAT</p></li>
-                <li><img src="public/play.png" alt="seta"><p class="line-treino">Perícias Trabalhistas</p></li>
-                <li><img src="public/play.png" alt="seta"><p class="line-treino">Permissão de Trabalho</p></li>
-                <li><img src="public/play.png" alt="seta"><p class="line-treino">PGR</p></li>
-                <li><img src="public/play.png" alt="seta"><p class="line-treino">SPDA</p></li>
-                <li><img src="public/play.png" alt="seta"><p class="line-treino">Visitas Técnicas</p></li>
+            <ul class="treino-ul" data-anime="left">
+                <li class="treinamentos-li">
+                    <div class="container-li"><img src="public/play.png" alt="seta"><p class="line-treino">Auditoria de NR's</p></div>
+                    <div class="container2-li animTreinamento display-toggle"><p>
+                        Normas regulatórias: Conduzimos uma avaliação abrangente da organização para identificar áreas que demandam aprimoramentos e aspectos que estão em plena conformidade com o decreto 3.214/78 Normas Regulatórias do Ministério do Trabalho.</p></div>
+                </li>
+                <li class="treinamentos-li">
+                    <div class="container-li"><img src="public/play.png" alt="seta"><p class="line-treino">Avaliação Ergonômica</p></div>
+                    <div class="container2-li animTreinamento display-toggle"><p>Envolve a avaliação das Posições Laborais com ênfase na organização das atividades, cronometragem, movimentos e elementos do ambiente, analisando e reconhecendo possíveis cenários de impacto, como posicionamento corporal, cansaço, repetição, condições térmicas adequadas, buscando facilitar uma integração confortável e eficiente entre o indivíduo e sua ocupação.</p></div>
+                </li>
+                <li class="treinamentos-li">
+                    <div class="container-li"><img src="public/play.png" alt="seta"><p class="line-treino">Elaboração de Processo Eleitoral de CIPA</p></div>
+                    <div class="container2-li animTreinamento display-toggle"><p>
+                        Comissão Interna de Prevenção de Riscos: Supervisionamos o ciclo completo do processo eleitoral da CIPE, desde a publicação inicial até o registro das atas das reuniões mensais, também conduzimos o programa de capacitação para os membros da comissão, de acordo com a NR-5 Comissão Interna de Prevenção de Riscos.</p></div>
+                </li>
+                <li class="treinamentos-li">
+                    <div class="container-li"><img src="public/play.png" alt="seta"><p class="line-treino">Laudo das Instalações Elétricas</p></div>
+                    <div class="container2-li animTreinamento display-toggle"><p>
+                        Conforme estabelecido pela Norma Regulamentadora NR-10 Segurança em Instalações e Serviços com Eletricidade, este relatório é conduzido para inspecionar as estruturas elétricas da empresa. Esse procedimento é executado pelo Engenheiro de Eletricidade e resulta na emissão da ART – Atestado de Responsabilidade Técnica, conforme as diretrizes.</p></div>
+                </li>
+                <li class="treinamentos-li">
+                    <div class="container-li"><img src="public/play.png" alt="seta"><p class="line-treino">Laudo de Insalubridade</p></div>
+                    <div class="container2-li animTreinamento display-toggle"><p>
+                        Trata-se do relatório técnico-jurídico conforme estipulado pela Norma Regulamentadora NR-15, que determina se os funcionários da organização têm direito ou não a receber o adicional de insalubridade (10%, 20% ou 40% do salário mínimo), devido à exposição a elementos físicos, químicos e/ou biológicos. Isso leva em consideração os limites de tolerância estabelecidos pelas regulamentações e as medidas de proteção implementadas pela empresa. Emitimos o parecer de insalubridade, englobando as avaliações relacionadas à exposição dos trabalhadores aos agentes prejudiciais (causadores de insalubridade), além de propostas técnicas para evitar a concessão dos adicionais de insalubridade, quando pertinente.</p></div>
+                </li>
+                <li class="treinamentos-li">
+                    <div class="container-li"><img src="public/play.png" alt="seta"><p class="line-treino">Laudo de Periculosidade</p></div>
+                    <div class="container2-li animTreinamento display-toggle"><p>Esse é o documento técnico-jurídico conforme estipulado pela Norma Regulamentadora NR-16. Ele determina se os funcionários da organização têm ou não o direito de receber o adicional de periculosidade (30% adicionais sobre o salário), devido à exposição a substâncias explosivas, inflamáveis, radiação ionizante, materiais radioativos e eletricidade. O objetivo do Relatório de Periculosidade, além de identificar essas atividades consideradas perigosas, é estabelecer medidas para eliminar ou reduzir a exposição dos funcionários a tais elementos, com o intuito de prevenir acidentes decorrentes de suas atividades.</p></div>
+                </li>
+                <li class="treinamentos-li">
+                    <div class="container-li"><img src="public/play.png" alt="seta"><p class="line-treino">Laudo de Ponte Rolante</p></div>
+                    <div class="container2-li animTreinamento display-toggle"><p>
+                        Conduzimos a Análise Técnica, Avaliação estrutural, Verificação de deslocamento e elevação, Certificação da grua e emitimos o laudo acompanhado da Atestação de Responsabilidade Técnica (ART). Se forem necessárias melhorias, elas serão detalhadas na seção de conclusões do documento.</p></div>
+                </li>
+                <li class="treinamentos-li">
+                    <div class="container-li"><img src="public/play.png" alt="seta"><p class="line-treino">Laudo de Vasos de Pressão, Caldeiras e Compressores</p></div>
+                    <div class="container2-li animTreinamento display-toggle"><p>Esse laudo é elaborado por um "Profissional Competente", em conformidade com a Norma Regulamentadora NR-13 referente a Caldeiras e Vasos de Pressão. Isso implica que um Engenheiro Mecânico devidamente registrado no Conselho Regional de Engenharia, Arquitetura e Agronomia (CREA) é responsável por conduzir a avaliação. Com base na NR-13 e em concordância com os artigos 187 e 188 da Consolidação das Leis do Trabalho (C.L.T.), o profissional coleta dados dos equipamentos da sua empresa e realiza a análise do Registro de Manutenções. A partir desses registros, o engenheiro atualiza as informações sobre os testes realizados e as manutenções efetuadas nos equipamentos.</p></div>
+                </li>
+                <li class="treinamentos-li">
+                    <div class="container-li"><img src="public/play.png" alt="seta"><p class="line-treino">LTCAT</p></div>
+                    <div class="container2-li animTreinamento display-toggle"><p>Laudo Técnico das Condições Ambientais de Trabalho - É redigido para registrar os elementos prejudiciais presentes no local de trabalho e determinar se esses elementos podem resultar em condições insalubres para os funcionários que possam ser expostos a eles. Sua renovação é necessária apenas quando ocorrem alterações no ambiente de trabalho.</p></div>
+                </li>
+                <li class="treinamentos-li">
+                    <div class="container-li"><img src="public/play.png" alt="seta"><p class="line-treino">Laudo de NR-12 Máquinas e Equipamentos</p></div>
+                    <div class="container2-li animTreinamento display-toggle"><p>Realizamos a avaliação das demandas de adequação das máquinas e equipamentos, emitimos o laudo das máquinas, oferecemos treinamento e gerenciamos a conformidade com esta norma.</p></div>
+                </li>
+                <li class="treinamentos-li">
+                    <div class="container-li"><img src="public/play.png" alt="seta"><p class="line-treino">Ordem de Serviço NR-01</p></div>
+                    <div class="container2-li animTreinamento display-toggle"><p>Emitimos a Ordem de Serviço individualizada para cada função/cargo dentro da sua empresa, com o objetivo de informar aos trabalhadores que realizam suas atividades laborais, conforme estabelecido no item 1.7 da NR-1. Isso visa abordar as condições de segurança e saúde às quais estão expostos, como medida preventiva, levando em consideração os agentes físicos, químicos e biológicos mencionados na NR-9 - Programa de Prevenção de Riscos Ambientais (Lei nº 6.514 de 22/12/1977, Portaria nº 3.214 de 08/06/1978), bem como os procedimentos definidos na NR-6 - Equipamento de Proteção Individual - EPI e na NR-17 - Ergonomia. Essa ação tem o intuito de estabelecer padrões de comportamento visando a prevenção de acidentes e doenças ocupacionais.</p></div>
+                </li>
+                <li class="treinamentos-li">
+                    <div class="container-li"><img src="public/play.png" alt="seta"><p class="line-treino">PCMAT</p></div>
+                    <div class="container2-li animTreinamento display-toggle"><p>O Programa de Condições e Meio Ambiente de Trabalho na Indústria da Construção Civil (PCMAT) é criado anteriormente ao início das atividades. Ele engloba os riscos em todas as fases da obra e, por essa razão, não possui um prazo de validade definido. Periodicamente, o PCMAT deve passar por uma avaliação global. Durante essa avaliação, é considerado o seu progresso e também se ele está cumprindo plenamente o propósito para o qual foi elaborado. Se houver a necessidade, são efetuados ajustes requeridos para estabelecer novas metas e prioridades de segurança.</p></div>
+                </li>
+                <li class="treinamentos-li">
+                    <div class="container-li"><img src="public/play.png" alt="seta"><p class="line-treino">Perícias Trabalhistas</p></div>
+                    <div class="container2-li animTreinamento display-toggle"><p>Oferecemos serviços de consultoria para empresas que se concentram na assistência técnica em questões judiciais, abrangendo a construção de estruturas de atendimento ao cliente. Isso inclui identificar suas necessidades, elaborar propostas, negociar, emitir contratos e desenvolver suporte para apresentar questões técnicas. Também acompanhamos perícias judiciais relacionadas a aspectos ambientais e operacionais, liberamos laudos para protocolo, fornecemos informações para respostas aos laudos judiciais e para esclarecimentos subsequentes. Além disso, supervisionamos a agenda dos assistentes envolvidos.</p></div>
+                </li>
+                <li class="treinamentos-li">
+                    <div class="container-li"><img src="public/play.png" alt="seta"><p class="line-treino">Permissão de Trabalho</p></div>
+                    <div class="container2-li animTreinamento display-toggle"><p>A Permissão de Trabalho é um documento formal redigido por escrito, em um formulário específico, para autorizar a realização de tarefas que envolvem um alto nível de risco. Isso inclui atividades como trabalho em espaços confinados, em alturas elevadas, com calor intenso, eletricidade e escavações. O propósito da permissão de trabalho é fornecer diretrizes claras sobre as etapas para avaliar e aprovar a execução de serviços que apresentam riscos potenciais de acidentes em diversas áreas.</p></div>
+                </li>
+                <li class="treinamentos-li">
+                    <div class="container-li"><img src="public/play.png" alt="seta"><p class="line-treino">PGR</p></div>
+                    <div class="container2-li animTreinamento display-toggle"><p>
+                        O Programa de Gerenciamento de Riscos é um conjunto de medidas que visa preservar a saúde e integridade dos trabalhadores. Isso é alcançado por meio da antecipação, identificação, avaliação e subsequente controle dos riscos ambientais existentes ou que possam surgir no ambiente de trabalho. Isso é feito considerando também a proteção do meio ambiente e dos recursos naturais. A legislação trabalhista exige que todas as empresas, tanto públicas quanto privadas, desenvolvam e implementem o PGR, além de manter um documento-base que registre essas ações.</p></div>
+                </li>
+                <li class="treinamentos-li">
+                    <div class="container-li"><img src="public/play.png" alt="seta"><p class="line-treino">SPDA</p></div>
+                    <div class="container2-li animTreinamento display-toggle"><p>Laudo de Para-Raios - É o documento técnico-jurídico cujo propósito é certificar as condições técnicas da malha de aterramento do Sistema de Proteção contra Descargas Atmosféricas (SPDA). Emitimos o parecer relativo ao SPDA, incluindo conclusões e, se necessário, propostas técnicas para aprimorar o SPDA.</p></div>
+                </li>
+                <li class="treinamentos-li">
+                    <div class="container-li"><img src="public/play.png" alt="seta"><p class="line-treino">Visitas Técnicas</p></div>
+                    <div class="container2-li animTreinamento display-toggle"><p>Analisamos as exigências da empresa para garantir a conformidade com as Normas Regulamentadoras. Realizamos uma avaliação de segurança abrangente em todas as áreas fabris, identificando os potenciais perigos e riscos. Após a conclusão das inspeções, elaboramos o RTC (Relatório Técnico Confidencial), detalhando as obrigações para atender à legislação.</p></div>
+                </li>
             </ul>
         </div>
     </section>
@@ -238,17 +326,13 @@
             <div class="elements-footer" id="elements-footer-left">
                 <div class="footer-full-logo">
                     <img src="public/logoWhite.png" alt="logo nasc" class="logo-footer">
-                    <div class="footer-name-logo">
-                        <div class="h1-logo-footer">NASC</div>
-                        <div class="h2-logo-footer">Segurança & Prevenção</div>
-                    </div>
                 </div>
                 <div class="footer-nav">
                     <ul>
-                        <a href="#"><li>HOME</li></a>
-                        <a href="#"><li>SERVIÇOS</li></a>
-                        <a href="#"><li>SOBRE NÓS</li></a>
-                        <a href="#"><li>FALE CONOSCO</li></a>
+                        <a href="#home"><li>HOME</li></a>
+                        <a href="#servicos"><li>SERVIÇOS</li></a>
+                        <a href="#sobre"><li>SOBRE NÓS</li></a>
+                        <a href="#contato"><li>FALE CONOSCO</li></a>
                     </ul>
                 </div>
             </div>
@@ -256,8 +340,8 @@
             <div class="elements-footer" id="elements-footer-right">
                 <div class="footer-redes">
                     <p>Entre em contato também pelas nossas redes sociais</p>
-                    <a href="https://www.instagram.com/nascseguranca/"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="https://api.whatsapp.com/send?l=pt&phone=55011954445544&text=Bom dia, eu vim pelo site."><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="https://www.instagram.com/nascseguranca/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://api.whatsapp.com/send?l=pt&phone=55011954445544&text=Bom dia, eu vim pelo site." target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
                 </div>
             </div>
         </div>
