@@ -244,6 +244,7 @@ main {
 }
 main .demo-bg {
   position: absolute;
+  background: url('../public/bgMain2.webp') no-repeat center;
   background-size: cover;
   z-index: 1;
   opacity: 0.1;
@@ -257,12 +258,12 @@ main .demo-bg {
 main .main-p1 {
   position: relative;
   z-index: 2;
-  width: 55vw;
+  width: 80vw;
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: start;
+  align-items: center;
   padding-left: 5vw;
   opacity: 1;
 }
@@ -270,6 +271,7 @@ main .main-p1 {
   main .main-p1 {
     width: 600px;
     padding-left: 0;
+    align-items: start;
   }
 }
 main .main-p1 h2 {
@@ -283,7 +285,6 @@ main .main-p1 h2 {
 @media screen and (min-width: 342px) {
   main .main-p1 h2 {
     font-size: 2.1rem;
-    text-align: start;
   }
 }
 @media screen and (min-width: 380px) {
@@ -299,6 +300,7 @@ main .main-p1 h2 {
 @media screen and (min-width: 1200px) {
   main .main-p1 h2 {
     font-size: 3.2rem;
+    text-align: start;
   }
 }
 main .main-p1 p {
@@ -347,22 +349,19 @@ main .main-p1 a button:hover {
 main .main-p2 {
   position: relative;
   z-index: 2;
-  width: 40vw;
   height: 100%;
   clip-path: polygon(27% 0, 100% 0, 100% 100%, 0% 100%);
+  background-image: url('../public/bgMain.webp');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 65%;
-}
-@media screen and (min-width: 800px) {
-  main .main-p2 {
-    background-position: 80%;
-  }
+  display: none;
 }
 @media screen and (min-width: 1200px) {
   main .main-p2 {
     background-position: center center;
     width: 600px;
+    display: block;
   }
 }
 .nav-info-container {
@@ -1651,4 +1650,7 @@ body {
 .animTreinamento {
   animation: animTreinamentos 1s forwards;
   transition: 1s;
+}
+.mt110 {
+  margin-top: 110px;
 }

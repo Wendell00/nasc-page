@@ -1,3 +1,11 @@
+if(window.innerWidth < 768) {
+  mainDiv = document.querySelector('main')
+  const navbar2 = document.querySelector('.navbar');
+  mainDiv.classList.add('mt110')
+  navbar2.classList.add('fixed');
+}
+
+
 const swiper = new Swiper('.swiper', {
     autoplay: {
       delay: 2000,
@@ -50,12 +58,14 @@ window.addEventListener('scroll', function(){
   const navinfo = document.querySelector('.nav-info-container')
   const scrollPosition = window.scrollY;
 
-  if (scrollPosition >= 40) {
-    navbar.classList.add('fixed');
-    navinfo.classList.add('scroll-fixed')
-  } else {
-    navbar.classList.remove('fixed');
-    navinfo.classList.remove('scroll-fixed')
+  if (window.innerWidth > 768) {
+    if (scrollPosition >= 40) {
+      navbar.classList.add('fixed');
+      navinfo.classList.add('scroll-fixed')
+    } else {
+      navbar.classList.remove('fixed');
+      navinfo.classList.remove('scroll-fixed')
+    }
   }
 });
 
