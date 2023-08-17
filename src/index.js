@@ -6,8 +6,10 @@ if(window.innerWidth < 768) {
 }
 
 const body = document.querySelector("body")
+const loading = document.querySelector(".loading")
 window.addEventListener('load', function() {
-  body.classList.toggle("display-toggle")
+  loading.classList.toggle("display-toggle")
+  body.style.overflowY = 'auto'
 });
 
 const swiper = new Swiper('.swiper', {
