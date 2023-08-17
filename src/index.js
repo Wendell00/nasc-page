@@ -5,6 +5,10 @@ if(window.innerWidth < 768) {
   navbar2.classList.add('fixed');
 }
 
+const body = document.querySelector("body")
+window.addEventListener('load', function() {
+  body.classList.toggle("display-toggle")
+});
 
 const swiper = new Swiper('.swiper', {
     autoplay: {
@@ -96,6 +100,20 @@ treinamentosList.forEach((element) => {
     const img = element.querySelector('img');
     img.classList.toggle('rotate-90')
     container2.classList.toggle('display-toggle');
+  });
+});
+
+const servicoCards = document.querySelectorAll('.servico-cards');
+
+servicoCards.forEach(card => {
+  card.addEventListener('mouseover', () => {
+    let capaceteIcon = card.querySelector('.capacete-icon');
+    capaceteIcon.src = 'public/capacete.png'; // Altere o src para a imagem desejada
+  });
+
+  card.addEventListener('mouseout', () => {
+    let capaceteIcon = card.querySelector('.capacete-icon');
+    capaceteIcon.src = 'public/capacete-branco.png'; // Volta para o src original
   });
 });
 

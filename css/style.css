@@ -645,23 +645,24 @@ aside {
   position: fixed;
   z-index: 8;
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   background-color: rgba(0, 0, 0, 0.2);
   display: flex;
   justify-content: end;
-  overflow-y: scroll;
-  overflow-x: hidden;
 }
 aside .aside-child {
   width: 400px;
+  height: 100vh;
   background-color: #ffffff;
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 301.8px) {
   aside .aside-child {
     width: 100vw;
   }
@@ -747,6 +748,7 @@ aside .aside-child .a-call {
 aside .aside-child .a-call .btn-call {
   width: 100%;
   height: 100%;
+  min-height: 52px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -856,6 +858,11 @@ footer .content-footer {
     width: 70%;
   }
 }
+@media screen and (max-width: 415.22px) {
+  footer .content-footer {
+    width: 90vw;
+  }
+}
 footer .content-footer .elements-footer {
   background-color: #1b676b;
   height: 100%;
@@ -887,14 +894,30 @@ footer .content-footer #elements-footer-left .footer-full-logo {
   display: flex;
   flex-direction: row;
 }
+@media screen and (max-width: 415.22px) {
+  footer .content-footer #elements-footer-left .footer-full-logo {
+    width: 180px;
+  }
+}
 @media screen and (max-width: 377.6px) {
   footer .content-footer #elements-footer-left .footer-full-logo {
     justify-content: center;
   }
 }
+@media screen and (max-width: 381.22px) {
+  footer .content-footer #elements-footer-left .footer-full-logo {
+    margin: 0 auto;
+    transform: translateX(-12px);
+  }
+}
 footer .content-footer #elements-footer-left .footer-full-logo .logo-footer {
   height: 80px;
   width: auto;
+}
+@media screen and (max-width: 415.22px) {
+  footer .content-footer #elements-footer-left .footer-full-logo .logo-footer {
+    height: 60px;
+  }
 }
 footer .content-footer #elements-footer-left .footer-full-logo .footer-name-logo {
   display: flex;
@@ -943,9 +966,19 @@ footer .content-footer #elements-footer-left .footer-nav {
     width: 300px;
   }
 }
+@media screen and (max-width: 381.22px) {
+  footer .content-footer #elements-footer-left .footer-nav {
+    justify-content: space-evenly;
+  }
+}
 @media screen and (max-width: 377.6px) {
   footer .content-footer #elements-footer-left .footer-nav {
     width: 262.5px;
+  }
+}
+@media screen and (max-width: 381.22px) {
+  footer .content-footer #elements-footer-left .footer-nav {
+    margin: 0 auto;
   }
 }
 @media screen and (max-width: 281.6px) {
@@ -1508,7 +1541,7 @@ footer #elements-footer-right .footer-redes p {
 .servicos .servico-container .servico-cards:hover {
   background-color: #30878b;
   color: #fff;
-  transition: all ease-in-out 0.3s;
+  transition: all ease-out 0.1s;
   transform: translateZ(-1px);
 }
 .servicos .servico-container .servico-cards:hover .servico-img img {
