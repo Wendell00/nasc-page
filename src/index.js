@@ -47,7 +47,6 @@ const swiper = new Swiper('.swiper', {
 aside = document.querySelector('.aside-nav')
 menuIcon = document.querySelector('.menu-icon')
 closeIcon = document.querySelector('.aside-x')
-body = document.querySelector('body')
 
 menuIcon.addEventListener('click', () => {
     aside.classList.toggle('display-toggle');
@@ -110,14 +109,14 @@ const servicoCards = document.querySelectorAll('.servico-cards');
 servicoCards.forEach(card => {
   card.addEventListener('mouseover', () => {
     let capaceteIcon = card.querySelector('.capacete-icon');
-    capaceteIcon.src = 'public/capacete.png'; // Altere o src para a imagem desejada
+    capaceteIcon.src = 'public/capacete.png'; 
   });
 
   card.addEventListener('mouseout', () => {
     let capaceteIcon = card.querySelector('.capacete-icon');
-    capaceteIcon.src = 'public/capacete-branco.png'; // Volta para o src original
+    capaceteIcon.src = 'public/capacete-branco.png';
   });
-});
+})
 
 
 // var dataAtual = new Date();
