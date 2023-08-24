@@ -1,16 +1,11 @@
+const body = document.querySelector("body")
+
 if(window.innerWidth < 768) {
   mainDiv = document.querySelector('main')
   const navbar2 = document.querySelector('.navbar');
   mainDiv.classList.add('mt110')
   navbar2.classList.add('fixed');
 }
-
-const body = document.querySelector("body")
-const loading = document.querySelector(".loading")
-window.addEventListener('load', function() {
-  loading.classList.add("display-toggle")
-  body.style.overflowY = 'auto'
-});
 
 const swiper = new Swiper('.swiper', {
     autoplay: {
