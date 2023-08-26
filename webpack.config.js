@@ -1,21 +1,12 @@
-const path = require('path');
+const path = require('path')
 
 module.exports = {
   mode: 'production',
-  entry: './js/index.js',
+  entry: {
+    main: './src/main.js',
+  },
   output: {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist')
-  },
-  module: {
-    rules: [
-      {
-        test: /\.css$/,
-        use: [
-          'style-loader',
-          'css-loader'
-        ]
-      }
-    ]
   }
 };

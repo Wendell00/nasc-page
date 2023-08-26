@@ -135,6 +135,29 @@
             </div>
         </div>
     </section>
+
+    <?php
+    $mensagem = ""; // Inicializa a variável de mensagem vazia
+
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        $nome = $_POST["nome"];
+        $email = $_POST["email"];
+        $mensagem = $_POST["mensagem"];
+
+        $para = "wendellborges2003@gmail.com";
+        $assunto = "Mensagem de $nome";
+        $corpo = "De: $nome\n";
+        $corpo .= "E-mail: $email\n";
+        $corpo .= "Mensagem:\n$mensagem";
+
+        if (mail($para, $assunto, $corpo)) {
+            $mensagem = "E-mail enviado com sucesso!";
+        } else {
+            $mensagem = "Erro ao enviar o e-mail.";
+        }
+    }
+    ?>
+
     <section class="parallax" id="contato">
         <div class="color">
             <div class="form">
@@ -348,9 +371,6 @@
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-    <script src="src/input.js"></script>
-    <script src="src/index.js"></script>
-    <script src="src/email.js"></script>
-    <script src="src/waypoint.js"></script>
+    <script src="dist/bundle.js"></script>
 </body>
 </html>

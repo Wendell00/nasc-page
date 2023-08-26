@@ -1,4 +1,12 @@
 const body = document.querySelector("body")
+const botao = document.querySelector('.botao');
+
+botao.addEventListener('click', () => {
+  fetch('/send-email', { method: 'POST' })
+    .then((response) => response.text())
+    .then((message) => alert(message))
+    .catch((error) => console.error(error));
+});
 
 if(window.innerWidth < 768) {
   mainDiv = document.querySelector('main')
