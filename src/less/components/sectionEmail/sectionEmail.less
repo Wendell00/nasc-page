@@ -1,162 +1,160 @@
 .parallax {
-    position: relative;
-    width: 100%;
+  position: relative;
+  width: 100%;
+  height: auto;
+  background: url("../public/construc.webp") no-repeat center fixed;
+  z-index: 1;
+  transition: 0.6s;
+  margin-bottom: 50px;
+
+  .color {
+    width: 100vw;
     height: auto;
-    background: url("../public/construc.webp") no-repeat center fixed;
-    z-index: 1;
-    transition: 0.6s;
-    margin-bottom: 50px;
-    
-    .color {
-        width: 100vw;
+    background-color: #1f1f1fdd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 16px 0 0 16px;
+
+    .form {
+      height: auto;
+      width: 100%;
+      max-width: 1200px;
+      display: flex;
+      gap: 20px;
+      justify-content: space-between;
+      padding: 30px 0px;
+
+      @media screen and (max-width: 1200px) {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0px;
+        margin-bottom: 30px;
+
+        .form-textos {
+          width: 90%;
+          padding: 0px;
+        }
+      }
+
+      .form-textos,
+      .form-email {
         height: auto;
-        background-color: #1b676bbd;
+        width: 80vw;
+        padding: 0px 20px;
+        margin-bottom: 5px;
+        margin-top: 20px;
+
+        @media screen and (min-width: 360px) {
+          width: 580px;
+        }
+
+        @media screen and (max-width: 501.8px) {
+          width: 450px;
+        }
+      }
+
+      .form-email {
+        display: flex;
+        height: auto;
+        flex-direction: column;
+        background-color: rgba(253, 253, 253, 0.658);
+        padding-bottom: 15px;
+        border-radius: 15px;
+
+        .form-title {
+          margin-top: 20px;
+          margin-bottom: 4px;
+          font-family: "Karla", sans-serif;
+          color: rgb(51, 51, 51);
+          font-size: 1.25rem;
+          font-weight: 300;
+        }
+
+        .input {
+          border: none;
+          padding: 5px 10px;
+          border-radius: 2px;
+          height: 30px;
+          font-family: "Inter", sans-serif;
+          font-weight: 600;
+
+          &:focus {
+            outline: none;
+          }
+        }
+
+        .text-area {
+          padding: 10px 10px;
+          border: none;
+          border-radius: 2px;
+          resize: vertical;
+          min-height: 60px;
+          font-family: "Inter", sans-serif;
+          font-weight: 600;
+
+          &:focus {
+            outline: none;
+          }
+        }
+
+        .botao {
+          height: 50px;
+          font-family: "Jost", sans-serif;
+          font-size: 1.2rem;
+          background-color: #bc9750;
+          border: none;
+          border-radius: 5px;
+          color: white;
+          margin-top: 10px;
+          transition: .3s;
+
+          &:hover {
+            background-color: #1f1f1f;
+            cursor: pointer;
+          }
+        }
+      }
+
+      .form-textos {
+        padding: 10px;
+        font-family: "Signika", sans-serif;
         display: flex;
         align-items: center;
+        flex-direction: column;
         justify-content: center;
-        border-radius: 16px 0 0 16px;
+        font-weight: 400;
+        width: 50%;
 
-        .form {
-            height: auto;
-            width: 100%;
-            max-width: 1200px;
-            display: flex;
-            gap: 20px;
-            justify-content: space-between;
-            padding: 30px 0px;
-            
-            @media screen and (max-width: 1200px) {
-                flex-wrap: wrap;
-                justify-content: center;
-                padding: 0px;
-                margin-bottom: 30px;
-
-                .form-textos {
-                    width: 90%;
-                    padding: 0px;
-                }
-            }
-
-            .form-textos, .form-email {
-                height: auto;
-                width: 80vw;
-                padding: 0px 20px;
-                margin-bottom: 5px;
-                margin-top: 20px;
-
-                @media screen and (min-width: 360px){
-                    width: 580px;
-                }
-
-                @media screen and (max-width: 501.80px) {
-                    width: 450px;
-                }
-            }
-
-            .form-email {
-                display: flex;
-                height: auto;
-                flex-direction: column;
-                background-color: rgba(253, 253, 253, 0.658);
-                padding-bottom: 15px;
-
-                
-
-                .form-title {
-                    margin-top: 20px;
-                    margin-bottom: 4px;
-                    font-family: 'Karla', sans-serif;
-                    color: rgb(51, 51, 51);
-                    font-size: 1.25rem;
-                    font-weight: 300;
-                }
-
-                .input {
-                    border: none;
-                    padding: 5px 10px;
-                    border-radius: 2px;
-                    height: 30px;
-                    font-family: 'Inter', sans-serif;
-                    font-weight: 600;
-
-                    &:focus {
-                        outline: none;
-                    }
-                }
-
-                .text-area {
-                    padding: 10px 10px;
-                    border: none;
-                    border-radius: 2px;
-                    resize: vertical;
-                    min-height: 60px;
-                    font-family: 'Inter', sans-serif;
-                    font-weight: 600;
-
-                    &:focus {
-                        outline: none;
-                    }
-                }
-
-                .botao {
-                    height: 50px;
-                    font-family: 'Jost', sans-serif;
-                    font-size: 1.2rem;
-                    background-color: #1b676b;
-                    border: none;
-                    border-radius: 5px;
-                    color: white;
-                    margin-top: 10px;
-                    
-
-                    &:hover {
-                        background-color: #3dad5d;
-                        cursor: pointer;
-                    }
-                }
-            }
-            
-            .form-textos {
-                
-                padding: 10px;
-                font-family: 'Signika', sans-serif;
-                display: flex;
-                align-items: center;
-                flex-direction: column;
-                justify-content: center;
-                font-weight: 400;
-                width: 50%;
-
-                @media screen and (max-width: 768px) {
-                    width: 90%;
-                }
-
-                .form-contato {
-                    font-size: 3rem;
-                    color: #fff;
-
-                    @media screen and (max-width: 1199.98px) {
-                        font-size: 2.6rem;
-                    }
-
-                    @media screen and (max-width: 281.86px){
-                        font-size: 2rem;
-                    }
-                }
-
-                .form-divtexto {
-                    color: #fff;
-                    margin-top: 50px;
-                    font-size: 1.15rem;
-                    text-align: justify;
-                    line-height: 25px;
-
-                    @media screen and (max-width: 281.86px) {
-                        font-size: 1.2rem;
-                    }
-                }
-            }
+        @media screen and (max-width: 768px) {
+          width: 90%;
         }
-    }
 
+        .form-contato {
+          font-size: 3rem;
+          color: #fff;
+
+          @media screen and (max-width: 1199.98px) {
+            font-size: 2.6rem;
+          }
+
+          @media screen and (max-width: 281.86px) {
+            font-size: 2rem;
+          }
+        }
+
+        .form-divtexto {
+          color: #fff;
+          margin-top: 50px;
+          font-size: 1.15rem;
+          text-align: justify;
+          line-height: 25px;
+
+          @media screen and (max-width: 281.86px) {
+            font-size: 1.2rem;
+          }
+        }
+      }
+    }
+  }
 }

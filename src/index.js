@@ -1,37 +1,29 @@
-const body = document.querySelector("body")
-const botao = document.querySelector('.botao');
+const body = document.querySelector("body");
 
-botao.addEventListener('click', () => {
-  fetch('/send-email', { method: 'POST' })
-    .then((response) => response.text())
-    .then((message) => alert(message))
-    .catch((error) => console.error(error));
-});
-
-if(window.innerWidth < 768) {
-  mainDiv = document.querySelector('main')
-  const navbar2 = document.querySelector('.navbar');
-  mainDiv.classList.add('mt110')
-  navbar2.classList.add('fixed');
+if (window.innerWidth < 768) {
+  mainDiv = document.querySelector("main");
+  const navbar2 = document.querySelector(".navbar");
+  mainDiv.classList.add("mt110");
+  navbar2.classList.add("fixed");
 }
 
-const swiper = new Swiper('.swiper', {
-    autoplay: {
-      delay: 2000,
-      disableOnInteraction: false,
+const swiper = new Swiper(".swiper", {
+  autoplay: {
+    delay: 2000,
+    disableOnInteraction: false,
   },
-    loop: true,
-    slidesPerView: 1,
+  loop: true,
+  slidesPerView: 1,
 
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-    },
-  
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
 
   grabCursor: true,
   effect: "creative",
@@ -44,89 +36,87 @@ const swiper = new Swiper('.swiper', {
       translate: ["100%", 0, 0],
     },
   },
-  
-  });
-
-aside = document.querySelector('.aside-nav')
-menuIcon = document.querySelector('.menu-icon')
-closeIcon = document.querySelector('.aside-x')
-
-menuIcon.addEventListener('click', () => {
-    aside.classList.toggle('display-toggle');
-    body.classList.toggle('overflow-toggle')
 });
 
-closeIcon.addEventListener('click', () => {
-    aside.classList.toggle('display-toggle');
-    body.classList.toggle('overflow-toggle')
+aside = document.querySelector(".aside-nav");
+menuIcon = document.querySelector(".menu-icon");
+closeIcon = document.querySelector(".aside-x");
+
+menuIcon.addEventListener("click", () => {
+  aside.classList.toggle("display-toggle");
+  body.classList.toggle("overflow-toggle");
 });
 
-window.addEventListener('scroll', function(){
-  const navbar = document.querySelector('.navbar');
-  const navinfo = document.querySelector('.nav-info-container')
+closeIcon.addEventListener("click", () => {
+  aside.classList.toggle("display-toggle");
+  body.classList.toggle("overflow-toggle");
+});
+
+window.addEventListener("scroll", function () {
+  const navbar = document.querySelector(".navbar");
+  const navinfo = document.querySelector(".nav-info-container");
   const scrollPosition = window.scrollY;
 
   if (window.innerWidth > 768) {
     if (scrollPosition >= 40) {
-      navbar.classList.add('fixed');
-      navinfo.classList.add('scroll-fixed')
+      navbar.classList.add("fixed");
+      navinfo.classList.add("scroll-fixed");
     } else {
-      navbar.classList.remove('fixed');
-      navinfo.classList.remove('scroll-fixed')
+      navbar.classList.remove("fixed");
+      navinfo.classList.remove("scroll-fixed");
     }
   }
 });
 
-const servicos = document.querySelector('.li-servicos')
-const servicosBox = document.querySelector('.servicos-box')
-const servicosAside = document.querySelector('.aside-li-servicos')
-const servicosBoxAside = servicosAside.querySelector('.aside-servicos-box')
-const imgSeta = document.querySelector("imgSeta")
+const servicos = document.querySelector(".li-servicos");
+const servicosBox = document.querySelector(".servicos-box");
+const servicosAside = document.querySelector(".aside-li-servicos");
+// const servicosBoxAside = servicosAside.querySelector(".aside-servicos-box");
+const imgSeta = document.querySelector("imgSeta");
 
-servicos.addEventListener("mouseenter", (event) => {
-  servicosBox.classList.toggle('display-toggle')
-});
+// servicos.addEventListener("mouseenter", (event) => {
+//   servicosBox.classList.toggle("display-toggle");
+// });
 
-servicos.addEventListener("mouseleave", (event) => {
-  servicosBox.classList.toggle('display-toggle')
-});
+// servicos.addEventListener("mouseleave", (event) => {
+//   servicosBox.classList.toggle("display-toggle");
+// });
 
-servicosAside.addEventListener("click", (event) => {
-  servicosBoxAside.classList.toggle('display-toggle')
-  imgSeta.classList.toggle('rotate-90')
-});
+// servicosAside.addEventListener("click", (event) => {
+//   servicosBoxAside.classList.toggle("display-toggle");
+//   imgSeta.classList.toggle("rotate-90");
+// });
 
-const treinamentosList = document.querySelectorAll('.treinamentos-li');
+const treinamentosList = document.querySelectorAll(".treinamentos-li");
 
 treinamentosList.forEach((element) => {
-  element.addEventListener('click', () => {
-    const container2 = element.querySelector('.container2-li');
-    const img = element.querySelector('img');
-    img.classList.toggle('rotate-90')
-    container2.classList.toggle('display-toggle');
+  element.addEventListener("click", () => {
+    const container2 = element.querySelector(".container2-li");
+    const img = element.querySelector("img");
+    img.classList.toggle("rotate-90");
+    container2.classList.toggle("display-toggle");
   });
 });
 
-const servicoCards = document.querySelectorAll('.servico-cards');
+const servicoCards = document.querySelectorAll(".servico-cards");
 
-servicoCards.forEach(card => {
-  card.addEventListener('mouseover', () => {
-    let capaceteIcon = card.querySelector('.capacete-icon');
-    capaceteIcon.src = 'public/capacete.png'; 
+servicoCards.forEach((card) => {
+  card.addEventListener("mouseover", () => {
+    let capaceteIcon = card.querySelector(".capacete-icon");
+    capaceteIcon.src = "public/capacete.png";
   });
 
-  card.addEventListener('mouseout', () => {
-    let capaceteIcon = card.querySelector('.capacete-icon');
-    capaceteIcon.src = 'public/capacete-branco.png';
+  card.addEventListener("mouseout", () => {
+    let capaceteIcon = card.querySelector(".capacete-icon");
+    capaceteIcon.src = "public/capacete-branco.png";
   });
-})
+});
 
+let dataAtual = new Date();
 
-// var dataAtual = new Date();
+let anoAtual = dataAtual.getFullYear();
 
-// // Obtém o ano atual
-// var anoAtual = dataAtual.getFullYear();
+console.log(anoAtual);
 
-// var elementDate = document.querySelector('.year-date');
-// elementDate.innerText = anoAtual;
-
+let elementDate = document.querySelector(".year-date");
+elementDate.innerText = anoAtual;
